@@ -1,10 +1,14 @@
 {% extends 'layout/base.html' %}
 
+{%  load static %}
 
 {% block content %}
 
 <h1>Welcome to Django App</h1>
 <h2>{{ title }}</h2>
+
+<img src="{% static 'img/square.png' %}" alt="Logo" width="70">
+
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, doloribus! Illo, quo. Non velit dolorum dolores ut eos. Quam at rerum obcaecati veritatis fugiat, inventore voluptatum eligendi nam beatae assumenda aliquam ducimus cupiditate. Nulla repudiandae ab molestias tenetur, facilis vitae incidunt recusandae autem perferendis minima. Placeat quia optio magni suscipit?</p>
 
 {% endblock %}
